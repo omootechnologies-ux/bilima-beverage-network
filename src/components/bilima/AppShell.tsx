@@ -2,7 +2,6 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import {
   BarChart3,
   Bell,
-  Building2,
   ClipboardList,
   LayoutDashboard,
   Package,
@@ -47,11 +46,7 @@ const NAV: Record<Role, NavItem[]> = {
     { to: "/supplier/orders", label: "Orders", icon: Truck },
   ],
   logistics: [{ to: "/logistics", label: "Jobs", icon: Truck }],
-  admin: [
-    { to: "/admin", label: "Overview", icon: ShieldCheck },
-    { to: "/admin/suppliers", label: "Suppliers", icon: Building2 },
-    { to: "/admin/disputes", label: "Disputes", icon: ClipboardList },
-  ],
+  admin: [{ to: "/admin", label: "Operations", icon: ShieldCheck }],
 };
 
 const ROLE_LABEL: Record<Role, string> = {
